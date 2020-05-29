@@ -1,0 +1,49 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #420;
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant', serif;
+}
+
+#fullpage {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
+    position: relative;
+}
+
+#fullpage > section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}

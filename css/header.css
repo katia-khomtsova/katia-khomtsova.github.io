@@ -1,0 +1,100 @@
+html,
+body {
+
+    font-size: 16px;
+}
+
+.header {
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 9996;
+}
+
+.header-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant', serif;
+    color: #fff;
+    letter-spacing: 0.12em;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: -3em;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 46px;
+    margin-left: -23px;
+    margin-bottom: 15px;
+    display: block;
+    z-index:9996;
+    opacity: .5;
+    transition: all 1s ease; 
+}
+
+.header .arrow {
+    margin-left: -23px;
+}
+
+section .arrow {
+    margin-left: 0;
+}
+
+.arrow.prev {
+    bottom: auto;
+    top:0;
+    margin-bottom:0;
+    margin-top:15px;
+}
+
+
+.arrow:hover {
+    opacity: 1;
+    transform: translateY(8px);
+}
+
+.arrow.prev:hover {
+    transform: none;
+    transform: translateY(-8px);
+}
+
+.arrow.prev img {
+    transform: rotate(180deg);
+}
+
+.header h1 {
+    font-family: 'Cormorant', serif;
+    font-size: 7vw;
+    letter-spacing: 0.07em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header p {
+    font-size: 2vw;
+}
+
+.header {
+    background-image: url("../images/169.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (max-width:768px) {
+
+    .header h1 {
+        font-size: 2.75rem;
+    }
+
+    .header p {
+        font-size: 1.35rem;
+    }
+}

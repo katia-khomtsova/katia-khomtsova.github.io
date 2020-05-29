@@ -1,0 +1,90 @@
+#s0 {
+    /*    background-color:#c3babb;   */
+    background-image: url("../images/route_01.jpg"), linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .75));
+    background-blend-mode:overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:90px;
+}
+
+.quote {
+    color: #420;
+    width: 100%;
+    max-width: 800px;
+    padding: 2em 2em 2em 6.4em;
+    position: relative;
+    font-size: 1rem;
+}
+
+.quote h3 {
+    position: relative;
+    font-size: 2.35em;
+    line-height: 1;
+    font-weight: 700;
+    /*    text-transform: lowercase;*/
+    z-index: 1;
+}
+
+.quote:before {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 32em;
+/*    color: #9b8e89;*/
+    color: rgba(132,111,111,.3);
+    line-height: .7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "”";
+    z-index: 0;
+}
+
+.quote:after {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    line-height: .7;
+    color: #fff;
+    position: absolute;
+    left: .75em;
+    top: .45em;
+    display: block;
+    content: "”";
+    z-index: 0;
+}
+
+.quote p {
+    margin-top: 3em;
+    font-size: 1.15rem;
+    letter-spacing: .075em;
+    position: relative;
+    z-index: 1;
+    opacity: .8;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .quote {
+        font-size: .7rem;
+        max-width: 600px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+
+    .quote {
+        max-width: 640px;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:720px) {
+    #s0 {
+        padding-left:40px;
+    }
+    
+}
